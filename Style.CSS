@@ -1,0 +1,92 @@
+font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+src: url('../fonts/open-sans-v40-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+src: url('./fonts/OpenSansCondensed-Bold.woff2') format('woff2')
+url('./fonts/OpenSansCondensed-Bold.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}    
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a {
+text-decoration: none;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+ul, ol {
+list-style: none;
+}
+
+img {
+object-fit: cover;
+}
+
+.container {
+width: 100%;
+max-width: 1160;
+margin-left: auto;
+margin-right: auto;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.site-logo {
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.site-logo span {
+font-weight: 700;
+font-size: 24px;
+color: #222;
+}
+.sitenav-list {
+display: flex;
+gap: 32px;
+font-weight: 700;
+color: #222;
+font-size: 14px;
+letter-spacing: 2px;
+}
+.sitenav-link {
+color: #222;
+text-transform: uppercase;
+}
+.header-cta {
+display: inline-block;
+padding: 12px 24px;
+background-color: #de2e54;
+border-radius: 8px;
+color: #fff;
+font-family: 'Open Sans Condensed';
+letter-spacing: 2px;
+}
